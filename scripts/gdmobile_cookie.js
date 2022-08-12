@@ -16,8 +16,7 @@ if ($request && $request.method != 'OPTIONS') {
       chavy.setdata(VAL_homeheader, KEY_homeheader)
       chavy.log(`❕ ${cookieName} VAL_homeheader: ${VAL_homeheader}`)
     }
-    chavy.msg(cookieName, `获取Cookie: 成功`, ``)
-  } catch (e) {
+    chavy.msg(cookieName, `获取Cookie: 成功`, ``)  } catch (e) {
     chavy.msg(cookieName, `获取Cookie: 失败`, e)
     chavy.log(`❌ ${cookieName} 获取Cookie: 失败: ${e}`)
   }
